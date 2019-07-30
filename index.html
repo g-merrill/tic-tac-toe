@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <h1 class="title">Tic Tac Toe</h1>
+    <div class="main-content">
+        <section class="player-sections">
+            <p class="player-icons">X's</p>
+            <div class="indic-wrapper">
+                <div id="turnPlayerOne" class="turn-indic"></div>
+                <p class="player-name">Player 1</p>
+            </div>
+            <p id="winnerPlayerOne" class="winner-msg">Congrats! You won!!</p>
+        </section>
+        <section class="central-section">   
+            <p id="turnMsg" class="turn-msg">Player <span id="whoseTurn"></span>'s turn</p>
+            <div id="gameBoard" class="game-board">
+                <div id="col0">
+                    <div id="c0r0" class="tile"></div>
+                    <div id="c0r1" class="left-tile"></div>
+                    <div id="c0r2" class="tile"></div>
+                </div>
+                <div id="col1">
+                    <div id="c1r0" class="top-tile"></div>
+                    <div id="c1r1" class="center-tile"></div>
+                    <div id="c1r2" class="bottom-tile"></div>
+                </div>
+                <div id="col2">
+                    <div id="c2r0" class="tile"></div>
+                    <div id="c2r1" class="right-tile"></div>
+                    <div id="c2r2" class="tile"></div>
+                </div>
+            </div>
+            <p id="tie" class="players-tied">Cat's game! This was a tie.</p>
+        </section> 
+        <section class="player-sections">
+            <p class="player-icons">O's</p>
+            <div class="indic-wrapper">
+                <div id="turnPlayerTwo" class="turn-indic"></div>
+                <p class="player-name">Player 2</p>
+            </div>
+            <p id="winnerPlayerTwo" class="winner-msg">Congrats! You won!!</p>
+        </section>
+    </div>
+    <button id="reset" class="reset-button">Reset Board</button>
+</body>
+</html>
