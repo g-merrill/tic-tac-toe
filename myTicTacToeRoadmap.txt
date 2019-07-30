@@ -1,0 +1,15 @@
+tic tac toe pseudocode
+structure
+    play area div in center of page
+        9 divs arranged in grid with borders on edges that form tic tac toe board
+        hidden X and O's behind each of the 9 divs that will activate when clicked
+
+    title div centered above play area
+
+    divs on right and left of play area that display player info
+        player names,
+        an indicator for whose turn it is, 
+        and text of 'winner!' for whoever wins the game
+
+    div under play area that displays 'tie' if there is a tie
+    reset button div at bottom of page
